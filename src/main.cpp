@@ -2,7 +2,8 @@
 #include <iostream> 	 
 #include <ctime> 		
 #include <vector>
-#include <algorithm>    
+#include <algorithm>
+#include <math.h>       /* fabs */
 #include "dcd_r.hpp"
 #include "dangling_check.hpp" 
 #include "dataCell_pbc.hpp" 
