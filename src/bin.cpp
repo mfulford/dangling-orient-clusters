@@ -3,6 +3,7 @@
 #include <algorithm>    // max vector size
 #include <cstring> 		// memset
 #include <algorithm>    // std::partial_sort
+#include <math.h>       /* fabs */
 #include "bin.hpp"
 
 using namespace std;
