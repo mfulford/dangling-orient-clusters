@@ -3,6 +3,7 @@
 
 
 **Description:** Code to analyze lammps binary trajectories. 
+
 **Input**: DCD file, cell data, q3 bond order data.
 * **Code will:**
   - A) build a neighbour list of oxygen atoms and determine the dangling molecules.
