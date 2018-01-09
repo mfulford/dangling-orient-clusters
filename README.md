@@ -14,3 +14,18 @@ Description: Code to analyze lammps binary trajectories. Read in DCD file, cell 
  *       H) determine number of ice-like and liquid-like molecules
  *
  *   q3 refers to the 3rd order Steinhard parameter and must be calculated beforehand and inputed
+
+* Output for every frame: 
+** cluster_time.txt: size of the largest water cluster on the top and bottom surface and the size of the largest ice-like clusters within the top and bottom QLL surfaces. 
+** dang_time.txt: number of dangling molecules on the top and bottom surfaces and the average dipole angle and q3 value of the dangling molecules. 
+** interface_time.txt: position of the QLL/ice interface and estimate of the QLL width. 
+** noxygens_time.txt:  Total number of ice and crystal molecules, number of QLL molecules on each surface, and the average dipole angle and q3 of QLL molecules. 
+* Output averaged over entire trajectory:
+** ProfileDensity.txt: density profile along surface normal
+** ProfileOrient.txt: dipole angle profile along surface normal
+** ProfileQ3.txt: q3 profile along surface normal
+** ProfileSlice_dipoleTheta.txt: dipole angle profile for 50 slices along the surface normal
+** Heatmap_Density.txt: Density heatmap for 50 slices along the surface normal
+** Heatmap_DipoleTheta.txt: Dipole angle heatmap for 50 slices along the surface normal
+** Heatmap_OrientationThetaGamma.txt: Theta (dipole) and Gamma heatmaps for 50 slices along the surface normal
+** Heatmap_Q3.txt: q3 heatmaps for 50 slices along the surface normal 
